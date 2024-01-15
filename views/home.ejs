@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="with=device-width, 
+   initial-scale=1.0">
+   <title>Villaggio Mall</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+<section class="header">
+   <nav>
+      <a href="/home"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+         <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+         <ul>
+            <li><a href="/home">HOME</a></li>
+            <li><a href="/shopping">SHOPPING</a></li>
+            <li><a href="/entertainment">ENTERTAINMENT</a></li>
+            <li><a href="/dining">DINING</a></li>
+            <li><a href="/about">ABOUT</a></li>
+         </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+   </nav>
+
+<div class="text-box">
+   <h1>Villaggio Mall</h1>
+   <p>Qatar's Most Luxurious Mall</p>
+   <a href="/shopping" class="hero-btn">Click here for shopping</a>
+</div>
+
+</section>
+
+<!------ Shopping ------>
+<section class="shopping">
+   <h1>Here In Villaggio, We Have</h1>
+   <p>Many options that will interest you in shopping</p>
+
+   <div class="row">
+      <div class="shopping-col">
+         <h3>VIA DOMO</h3>
+         <p>One of the most luxurious places where you can shop and find your
+         taste in luxury
+         </p>
+      </div>
+      <div class="shopping-col">
+         <h3>FASHION</h3>
+         <p>Many clothing brand to choose from when you want to shop for 
+            clothing and 
+         </p>
+      </div>
+      <div class="shopping-col">
+         <h3>MORE SHOPPING</h3>
+         <p>One of the most luxurious places where you can shop and find your
+         taste in luxury
+         </p>
+      </div>
+   </div>
+</section>
+
+<!------ entertainment ------>
+<section class="entertainment">
+   <h1>Entertainment</h1>
+   <p>We have many options to offer entertainment for all ages</p>
+
+   <div class="row">
+      <div class="entertainment-col">
+         <img src="images/Gondolania.png">
+         <div class="layer">
+            <h3>GONDOLA</h3>
+         </div>
+      </div>
+      <div class="entertainment-col">
+         <img src="images/cinema.png">
+         <div class="layer">
+            <h3>CINEMA</h3>
+         </div>
+      </div>
+      <div class="entertainment-col">
+         <img src="images/GoKart.png">
+         <div class="layer">
+            <h3>GO KART</h3>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!------ Dining ------>
+<section class="dining">
+   <h1>Dining Experience</h1>
+   <p>Many restaurants to choose from</p>
+
+   <div class="row">
+      <div class="dining-col">
+         <img src="images/foodcourt.png">
+         <h3>Food Court</h3>
+         <p>A place where you can find which restaurant for all ages.</p>
+      </div>
+      <div class="dining-col">
+         <img src="images/food.png">
+         <h3>Cultured food</h3>
+         <p>Many cultured food restaurants to fit in your interests in food 
+            culture.
+         </p>
+      </div>
+   </div>
+</section>
+
+<!------ VIA Domo ------>
+<section class="VIA">
+   <h1>Check out VIA Domo</h1>
+   <a href="/shopping" class="hero-btn">SHOPPING</a>
+</section>
+
+<!------ Footer ------>
+<section class="about">
+   <h4>About Us</h4>
+   <p>Follow us on some more news about Villaggio on the following
+      social media:
+   </p>
+   <div class="icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+   </div>
+</section>
+
+<!------Script for Toggle Menu on mobile------>
+<script>
+
+   var navLinks = document.getElementById("navLinks");
+   function showMenu(){
+      navLinks.style.right = "0";
+   }
+   function hideMenu(){
+      navLinks.style.right = "-200px";
+   }
+
+</script>
+
+</body>
+</html>
