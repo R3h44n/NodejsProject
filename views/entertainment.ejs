@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="with=device-width, 
+   initial-scale=1.0">
+   <title>Villaggio Mall</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+<section class="sub-header">
+   <nav>
+      <a href="/home"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+         <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+         <ul>
+            <li><a href="/home">HOME</a></li>
+            <li><a href="/shopping">SHOPPING</a></li>
+            <li><a href="/entertainment">ENTERTAINMENT</a></li>
+            <li><a href="/dining">DINING</a></li>
+            <li><a href="/about">ABOUT</a></li>
+         </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+   </nav>
+   <h1>Entertainment</h1>
+
+</section>
+
+<!------ Dining ------>
+<section class="entertainment-section">
+
+   <div class="row">
+      <div class="entertainment-left">
+         <img src="images/gondolania-2.jpeg">
+         <h2>Gondolania</h2>
+         <p>Gondolania is an indoor theme park where all ages can have fun
+            inside Villaggio, and inside Gondolania, there are many fun 
+            experience for both older kids and adults, and which is 
+            rollercoaster, the drop, arcade area, and many fun rides where 
+            both adults and teens will like.</p><br>
+         <p>As for the kids, there are play ground areas where kids can play,
+             like trampolines, playground area, and much more fun rides
+             in Gondolania.
+         </p>
+      </div>
+      <div class="entertainment-right">
+         <h3>Table Content</h3>
+         <div>
+            <span>- Gondolania</span>
+         </div>
+         <div>
+            <span>- Gondola</span>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!------ Footer ------>
+<section class="about">
+   <h4>About Us</h4>
+   <p>Follow us on some more news about Villaggio on the following
+      social media:
+   </p>
+   <div class="icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+   </div>
+</section>
+
+<!------Script for Toggle Menu on mobile------>
+<script>
+
+   var navLinks = document.getElementById("navLinks");
+   function showMenu(){
+      navLinks.style.right = "0";
+   }
+   function hideMenu(){
+      navLinks.style.right = "-200px";
+   }
+
+</script>
+
+</body>
+</html>
